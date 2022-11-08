@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { AlertService } from 'src/app/_services/alert.service';
 import { AccountService } from 'src/app/_services/account.service';
 
 @Component({ templateUrl: 'login.component.html' })
 export class LoginComponent implements OnInit {
-    public form: FormGroup | undefined;
+    form!: FormGroup;
     loading = false;
     submitted = false;
 

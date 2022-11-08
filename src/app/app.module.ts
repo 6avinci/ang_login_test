@@ -15,7 +15,7 @@ import { RouterOutlet } from '@angular/router';
 
 @NgModule({
     imports: [
-        RouterOutlet
+        RouterOutlet,
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
